@@ -1,16 +1,45 @@
-# React + Vite
+# Книжный клуб - Minimalist Reading List
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Минималистичное приложение для отслеживания прочитанных книг с возможностью поиска, фильтрации и отметками о прочтении.
 
-Currently, two official plugins are available:
+## Демо
+https://nikitamariman.github.io/reading-list
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Технологии
+- React + Vite
+- Tailwind CSS v4
+- React Router
+- JSONPlaceholder API
+- Framer Motion
 
-## React Compiler
+## Функциональность
+- Список из 100 книг с авторами (данные с JSONPlaceholder)
+- Поиск по названию и автору с подсветкой результатов
+- Фильтр "прочитанные" (только для авторизованных пользователей)
+- Регистрация и вход через localStorage
+- Отметка книг как прочитанных
+- Светлая и тёмная темы с сохранением выбора
+- Детальная страница каждой книги с датой публикации
+- Анимации появления карточек
+- Кнопка для возврата наверх
+- Адаптивный дизайн для мобильных устройств
+- Состояние пустого списка при отсутствии результатов
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Установка и запуск
 
-## Expanding the ESLint configuration
+git clone https://github.com/nikitamariman/reading-list.git
+cd reading-list
+npm install
+npm run dev
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Структура проекта
+
+src/
+  components/          - переиспользуемые компоненты
+  pages/               - страницы приложения
+  hooks/               - кастомные React хуки
+  router/              - настройки роутинга
+  app/                 - ядро приложения
+
+## Лицензия
+MIT
